@@ -12,4 +12,4 @@ RUN mkdir -p /var/lib/influxdb
 RUN mkdir -p /var/lib/chronograf
 RUN mkdir -p /var/lib/kapacitor
 
-CMD /bin/bash
+CMD /bin/sh
