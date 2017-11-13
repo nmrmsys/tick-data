@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cp -rn /root/tick-conf/* /
+cp -ru /root/tick-conf/* /
 
 /bin/sh
 
