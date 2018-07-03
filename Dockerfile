@@ -2,6 +2,10 @@
 FROM alpine
 MAINTAINER nmrmsys@gmail.com
 
+RUN set -x && \
+    echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
+    apk --update-cache --no-cache --upgrade add bash vim
+
 RUN mkdir -p /root/tick-conf
 ADD tick-conf /root/tick-conf/
 
